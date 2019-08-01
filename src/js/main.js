@@ -27,9 +27,9 @@ $(function() {
             .html("...processing");
 
         // x, y, width, height
-        const picData = [258, 70, 565, 565];
+        const picData = [250, 70, 500, 400];
         // name, y
-        const nameData = [username, 705];
+        const nameData = [username, 615];
 
         createDP(username, imageData, picData, nameData, function(url) {
             navigateTo("yourdp", createHTMLForImage(url));
@@ -137,8 +137,8 @@ $(function() {
 
             ctx.textBaseline = "top";
             ctx.textAlign = "center";
-            ctx.font = "bold 60px Raleway";
-            ctx.fillStyle = "#507134";
+            ctx.font = "bold 30px Raleway";
+            ctx.fillStyle = "#5254d0";
             ctx.fillText(name[0], 540, name[1]);
 
             cb(canvas.toDataURL("image/jpeg", 1.0));
